@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
         //Tarjeta para el catalogo
         {
             Titulo: 'Test CARAS-R',
-            Imagen: '/heustonn-html/images/tdah.svg',
+            Imagen: 'images/tdah.svg',
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: '/heustonn-html/articulos/articulo-caras.html'
+            Pagina: 'Articulos/articulo-caras.html'
         },
         //Tarjeta para la aplicación (Hay que evitar que salga en el catalogo)
         {
             Titulo: 'Aplicar CARAS-R',
-            Imagen: '/heustonn-html/images/tdah.svg',
+            Imagen: '../images/tdah.svg',
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: '../pruebas/caras-r/aplicacion-caras.html'
+            Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
         },
         {
             Titulo: 'Inventario de depresión <br> "BDI-II"',

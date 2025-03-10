@@ -176,7 +176,7 @@ async function confirmarDatos() {
     ICI = 0;
   
     // Genera la lista de imágenes (simulando 60 imágenes)
-    todasLasImagenes = Array.from({ length: 60 }, (_, i) => `/heustonn-html/pruebas/Caras-r/img/Capa ${i + 1}.svg`);
+    todasLasImagenes = Array.from({ length: 60 }, (_, i) => `img/Capa ${i + 1}.svg`);
     
     // Define las diferencias para las imágenes (por simplicidad, se define solo para la primera imagen)
     const imagenesConDiferencias = [
