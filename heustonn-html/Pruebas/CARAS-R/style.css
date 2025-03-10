@@ -1,0 +1,167 @@
+
+        /*Botones de mostrar formulario*/
+        .proceder-formulario-container button {
+            display: block;
+            margin: 10px auto; /* Separación entre los botones */
+            background-color: rgb(57, 100, 151);
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 70%; /* Asegura que los botones ocupen el 100% del contenedor */
+            max-width: 500px; /* Limita el ancho de los botones */
+            font-size: 1.2rem;
+            text-align: center; /* Asegura que el texto esté centrado */
+            white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+            min-height: 50px; /* Establece una altura mínima para los botones */
+            line-height: 1.5; /* Ajusta el espaciado entre las líneas de texto */
+            overflow: hidden; /* Asegura que el texto largo no desborde el botón */
+            /*margin-left: 0;*/
+        }
+    
+            /* Efecto al hacer clic (pulsar el botón) */
+            .proceder-formulario-container button:active {
+                background-color: rgb(20, 55, 90); /* Cambia a un tono más oscuro de azul */
+                transform: scale(0.98); /* Hace que el botón se "reduzca" ligeramente para dar un efecto de presión */
+                transition: transform 0.1s ease, background-color 0.2s ease; /* Transiciones para suavizar el cambio */
+            }
+    
+        /* Asegúrate de que el botón recupere su tamaño normal rápidamente */
+        .proceder-formulario-container button {
+            transition: transform 0.1s ease-out, background-color 0.2s ease;
+        }
+    
+        /*Titulo de la prueba (aparece todo el tiempo en la pagina)*/
+        .tituloPrincipal{
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        /*Contenedor de las instrucciones*/
+        .instructions-container 
+        {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        max-width: 600px;
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 30px auto;
+        }
+    
+        /*Contenedor de la imagen de ejemplo*/
+        .example-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+        }
+    
+        /*Titulo del conetendor de ingreso de datos*/
+        .form-container p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    
+        /*Contenedor de ingreso de datos y resultados */
+        .form-container, .results-container {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            max-width: 500px;
+            width: 100%;
+            font-size: 1.2rem;
+            margin: 30px auto;
+        }
+    
+    
+        .test-content {
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+        }
+    
+        select, input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        }
+    
+        /*Boton para reiniciar el test al final de los resultados*/
+        .ReinciarTest {
+            display: block;
+            margin: 0 auto;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+        }
+    
+        .test-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    
+        }
+    
+        .image-wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        }
+    
+        #imagenTest {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        border-radius: 8px;
+        }
+    
+        .marcador {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        border: 4px solid red;
+        pointer-events: none;
+        }
+    
+        .score, .message {
+        text-align: left;
+        }
+    
+        .tiempo-restante {
+        font-size: 18px;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 20px;
+        }
+    
+        /* Al principio, ocultamos todos los elementos relacionados con las imágenes y demás */
+.resultados {
+    display: none; /* Se oculta inicialmente */
+  }
+  
+  /* Esto es opcional, pero podrías agregar más reglas para ocultar imágenes o elementos específicos */
+  .imagenes {
+    display: none;
+  }
