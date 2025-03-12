@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Inventario de ansiedad, <br> "BAI"',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
-            Pagina: '/Cuestionario-de-ansiedad'
+            Pagina: 'Articulos/articulo-bai.html'
         },
         {
             Titulo: 'Cuestionario de estrés',
