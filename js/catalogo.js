@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
             Pagina: 'Articulos/articulo-caras.html'
         },
-        //Tarjeta para la aplicación (Hay que evitar que salga en el catalogo)
+        //Tarjeta para la aplicación
         {
             Titulo: 'Aplicar CARAS-R',
             Imagen: '../images/aplicar.svg',
@@ -19,7 +19,14 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Inventario de depresión <br> "BDI-II"',
             Imagen: 'images/depresion.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '/Cuestionario-de-depresion'
+            Pagina: '../Pruebas/CARAS-R/aplicacion-bdi-ii.html'
+        },
+        //Tarjeta para la aplicación
+        {
+            Titulo: 'Aplicar <br> "BDI-II"',
+            Imagen: '../images/aplicar.svg',
+            Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
+            Pagina: '../Pruebas/CARAS-R/aplicacion-bdi-ii.html'
         },
         {
             Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
@@ -85,10 +92,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Cargar solo el catálogo de Estrés (si existe)
-    const estresSection = document.getElementById('estres');
+    const estresSection = document.getElementById('depresion');
     if (estresSection) {
-        crearCatalogo('estres', [pruebas[3]]);
+        crearCatalogo('depresion', [pruebas[3]]);
     } else {
-        console.log("El elemento con id 'estres' no está presente en el DOM.");
+        console.log("El elemento con id 'depresion' no está presente en el DOM.");
     }
 });
