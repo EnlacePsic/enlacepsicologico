@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Lista de pruebas
-    const pruebas = [
-        //Tarjeta para el catalogo
+    // Lista de entradas del blog
+    const entradas = [
+        // Entrada de blog sobre CARAS-R
         {
             Titulo: 'Test CARAS-R',
             Imagen: 'images/tdah.svg',
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
             Pagina: 'Articulos/articulo-caras.html'
         },
-        //Tarjeta para la aplicación (Hay que evitar que salga en el catalogo)
+        // Entrada para la aplicación (Debe excluirse del blog)
         {
             Titulo: 'Aplicar CARAS-R',
             Imagen: '../images/aplicar.svg',
@@ -41,53 +41,55 @@ document.addEventListener("DOMContentLoaded", function() {
         // Puedes agregar más títulos aquí
     ];
 
-    // Filtrar las pruebas para excluir las de tipo "aplicación"
-    const pruebasCatalogo = pruebas.filter(prueba => !excluir.includes(prueba.Titulo));
+    // Filtrar las entradas para excluir las que no van en el blog
+    const entradasBlog = entradas.filter(entrada => !excluir.includes(entrada.Titulo));
 
-    // Función para crear las tarjetas dinámicamente
-    function crearCatalogo(catalogoId, pruebas) {
-        const catalogo = document.getElementById(catalogoId);
-        if (!catalogo) {
-            console.log(`No se encontró el catálogo con el id: ${catalogoId}`);
+    // Función para crear las entradas dinámicamente
+    function crearBlog(blogId, entradas) {
+        const blog = document.getElementById(blogId);
+        if (!blog) {
+            console.log(`No se encontró la sección de blog con el id: ${blogId}`);
             return; // Si no se encuentra el elemento, salimos de la función
         }
 
-        catalogo.innerHTML = ""; // Limpia el contenido previo
+        blog.innerHTML = ""; // Limpia el contenido previo
 
-        pruebas.forEach(prueba => {
-            const tarjeta = document.createElement('button');
-            tarjeta.classList.add('tarjeta');
-            tarjeta.innerHTML = `
-                <img src="${prueba.Imagen}" alt="${prueba.Titulo}">
-                <h3>${prueba.Titulo}</h3>
-                <p>${prueba.Descripcion}</p>
+        entradas.forEach(entrada => {
+            const elementoEntrada = document.createElement('button');
+            elementoEntrada.classList.add('entrada');
+            elementoEntrada.innerHTML = `
+                <img src="${entrada.Imagen}" alt="${entrada.Titulo}">
+                <div class="entrada-contenido">
+                    <h3>${entrada.Titulo}</h3>
+                    <p>${entrada.Descripcion}</p>
+                </div>
             `;
 
-            tarjeta.addEventListener('click', () => {
+            elementoEntrada.addEventListener('click', () => {
                 setTimeout(() => {
-                    window.location.href = prueba.Pagina;
+                    window.location.href = entrada.Pagina;
                 }, 200);
             });
 
-            catalogo.appendChild(tarjeta);
+            blog.appendChild(elementoEntrada);
         });
     }
 
-    // Ejecutar la función con diferentes catálogos cuando la página se carga
+    // Ejecutar la función con diferentes secciones cuando la página se carga
 
-    // Cargar catálogo principal con pruebas filtradas
-    crearCatalogo('catalogo', pruebasCatalogo);
+    // Cargar la sección principal del blog con entradas filtradas
+    crearBlog('entradas_blog', entradasBlog);
     
-    // Cargar solo el catálogo de CARAS (si existe)
+    // Cargar solo la sección de CARAS (si existe)
     const carasSection = document.getElementById('caras');
     if (carasSection) {
-        crearCatalogo('caras', [pruebas[1]]);
+        crearBlog('caras', [entradas[1]]);
     }
 
-    // Cargar solo el catálogo de Estrés (si existe)
+    // Cargar solo la sección de Estrés (si existe)
     const estresSection = document.getElementById('estres');
     if (estresSection) {
-        crearCatalogo('estres', [pruebas[3]]);
+        crearBlog('estres', [entradas[3]]);
     } else {
         console.log("El elemento con id 'estres' no está presente en el DOM.");
     }
