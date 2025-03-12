@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Aplicar CARAS-R',
             Imagen: '../images/aplicar.svg',
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
+            Pagina: 'Pruebas/CARAS-R/aplicacion-caras.html'
         },
         //Tarjeta para el catalogo
         {
@@ -89,13 +89,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cargar solo el catálogo de CARAS (si existe)
     const carasSection = document.getElementById('caras');
     if (carasSection) {
-        crearCatalogo('caras', [pruebas[1]]);
+        crearCatalogo('caras', [pruebas[0]]);
     }
 
     // Cargar solo el catálogo de Estrés (si existe)
     const estresSection = document.getElementById('depresion');
     if (estresSection) {
-        crearCatalogo('depresion', [pruebas[3]]);
+        crearCatalogo('depresion', [pruebas[0]]);
     } else {
         console.log("El elemento con id 'depresion' no está presente en el DOM.");
     }
