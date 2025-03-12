@@ -29,17 +29,26 @@ document.addEventListener("DOMContentLoaded", function() {
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
             Pagina: '../Pruebas/DepresionBDI/aplicacion-bdi.html'
         },
+        //Tarjeta para el catalogo
         {
             Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
             Pagina: 'Articulos/articulo-bai.html'
         },
+        //Tarjeta para la aplicacion
+        {
+            Titulo: 'Aplicar BAI',
+            Imagen: '../images/aplicar.svg',
+            Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
+            Pagina: '../Pruebas/AnsiedadBAI/aplicacion-bai.html'
+        },
     ];
 
     const excluir = [
         'Aplicar CARAS-R',
         'Aplicar BDI-II',
+        'Aplicar BAI',
         // Puedes agregar más títulos aquí
     ];
 
@@ -90,6 +99,12 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log('Sección depresión:', DepresionBDISection);
     if (DepresionBDISection) {
         crearCatalogo('depresion', [pruebas[3]]);
+    }
+
+    const AnsiedadBAISection = document.getElementById('ansiedad');
+    console.log('Sección ansiedad:', AnsiedadBAISection);
+    if (AnsiedadBAISection) {
+        crearCatalogo('ansiedad', [pruebas[5]]);
     }
 
 });
