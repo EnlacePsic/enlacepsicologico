@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación de percepción de diferencias para diagnóstico de TDA y TDAH</title>
-    <!-- Referencia al archivo CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Evaluación de percepción de diferencias para diagnóstico de TDA y TDAH</title>
 
-      <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Heustonn</title>
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
   
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-  <!-- responsive style -->
-  <link rel="stylesheet" type="text/css" href="../../css/responsive.css" />
+  <!-- CSS Secundario con optimización de carga -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" media="print" onload="this.media='all'">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Google AdSense (anuncios) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8058707117115266"
+  crossorigin="anonymous"></script> 
+
+  <!-- Google tag (estadísticas de visitas) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-18S0H1DZ7S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-18S0H1DZ7S');
+  </script>
+  
 </head>
 
 <body>
@@ -84,6 +88,56 @@
     <h3 class="tituloPrincipal" align="center">Inventario de Ansiedad de Beck</h3>
     <h5 class="subTituloPrincipal" align="center">Evaluación para el grado de ansiedad</h5>
 
+    <body>
+      <div class="container">
+          <h3 class="tituloPrincipal" align="center">Inventario de ansiedad</h3>
+          <div id="instrucciones" class="instructions-container">
+              <h4><strong>Instrucciones</strong></h4>
+              <p>
+                  <br />Responda este cuestionario considerando sus dificultades actuales. Considere como referencia las
+                  dificultades que ha tenido este <strong>último mes.</strong>
+                  Si varios enunciados le parecen igualmente apropiados, marque el número más alto.
+              </p>
+  
+              <div class="example-container">
+                  <p><strong>Ejemplo:</strong></p>
+                  <strong>Afirmación:</strong> Torpe o entumecido.<br />
+                  <strong>Opciones:</strong><br />
+                  No<br />
+                  Levemente<br />
+                  Moderado<br />
+                  Bastante<br />
+              </div>
+  
+              <div class="mostrar-formulario-container">
+                  <br /><button id="iniciarTestButton">Proceder con el test</button>
+              </div>
+  
+              <div class="textconfirmacion">
+                  <p>Al confirmar iniciara la prueba</p>
+              </div>
+          </div>
+  
+          <div id="testContainer" class="test-container-ansiedad" style="display: none;">
+              <div id="afirmacionActual" class="afirmacion-ansiedad"></div>
+  
+              <div id="optionsContainer" class="options-container-ansiedad">
+                  <!-- Opciones dinámicas aquí -->
+              </div>
+          </div>
+  
+          <div id="resultadoContainer" class="resultado-container" style="display: none;">
+              <p><strong>Resultado Final</strong></p>
+              <p><strong>Nivel de ansiedad:</strong></p>
+              <p id="mensajeResultado"></p>
+              <div class="mostrar-formulario-container">
+                  <br /><button id="reiniciarTestButton">Repetir test</button>
+              </div>
+          </div>
+      </div>
+  
+      <script src="script.js"></script>
+  </body>
    
           <!-- info section -->
           <section class="info_section layout_padding">

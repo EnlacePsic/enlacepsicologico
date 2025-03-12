@@ -1,0 +1,166 @@
+.textconfirmacion {
+    text-align: center;
+}
+
+/*Botones de mostrar formulario*/
+.mostrar-formulario-container button 
+{
+    display: block;
+    margin: 10px auto; /* Separación entre los botones */
+    background-color: rgb(57, 100, 151);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Asegura que los botones ocupen el 100% del contenedor */
+    max-width: 200px; /* Limita el ancho de los botones */
+    font-size: 1.2rem;
+    text-align: center; /* Asegura que el texto esté centrado */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    min-height: 50px; /* Establece una altura mínima para los botones */
+    line-height: 1.5; /* Ajusta el espaciado entre las líneas de texto */
+    overflow: hidden; /* Asegura que el texto largo no desborde el botón */
+    /*margin-left: 0;*/
+}
+
+    /* Efecto al hacer clic (pulsar el botón) */
+    .mostrar-formulario-container button:active 
+    {
+        background-color: rgb(20, 55, 90); /* Cambia a un tono más oscuro de azul */
+        transform: scale(0.98); /* Hace que el botón se "reduzca" ligeramente para dar un efecto de presión */
+        transition: transform 0.1s ease, background-color 0.2s ease; /* Transiciones para suavizar el cambio */
+    }
+
+/* Asegúrate de que el botón recupere su tamaño normal rápidamente */
+.mostrar-formulario-container button 
+{
+    transition: transform 0.1s ease-out, background-color 0.2s ease;
+}
+
+/*Titulo de la prueba (aparece todo el tiempo en la página)*/
+.tituloPrincipal 
+{
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Contenedor de las instrucciones*/
+.instructions-container 
+{
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 30px auto;
+}
+
+.afirmacion
+{
+    font-size: 1.5rem;
+}
+
+/*Contenedor del test*/
+.test-container 
+{
+    font-size: 0.9rem;
+    text-align: left;
+    min-height: 470px; /* Asegura que el contenedor tenga suficiente altura */
+    height: auto; /* Permite que el contenedor se ajuste si es necesario */
+    max-width: 500px;
+    width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos desde la parte superior */
+    gap: 15px; /* Espacio entre los elementos dentro del contenedor */
+}
+
+.options-container 
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+    /*Botones de respuestas*/
+    .options-container button 
+    {
+        display: block;
+        margin: 10px auto; /* Separación entre los botones */
+        background-color: rgb(57, 100, 151);
+        color: white;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%; /* Asegura que los botones ocupen el 100% del contenedor */
+        max-width: 400px; /* Limita el ancho de los botones */
+        font-size: 1.2em;
+        text-align: left; /* Asegura que el texto esté centrado */
+        white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+        min-height: 70px; /* Establece una altura mínima para los botones */
+        line-height: 1.5; /* Ajusta el espaciado entre las líneas de texto */
+        overflow: hidden; /* Asegura que el texto largo no desborde el botón */
+    }
+
+        /* Efecto al hacer clic (pulsar el botón) */
+        .options-container button:active 
+        {
+            background-color: rgb(20, 55, 90); /* Cambia a un tono más oscuro de azul */
+            transform: scale(0.98); /* Hace que el botón se "reduzca" ligeramente para dar un efecto de presión */
+            transition: transform 0.1s ease, background-color 0.2s ease; /* Transiciones para suavizar el cambio */
+        }
+
+    /* Asegúrate de que el botón recupere su tamaño normal rápidamente */
+    .options-container button 
+    {
+        transition: transform 0.1s ease-out, background-color 0.2s ease;
+    }
+
+
+/*Contenedor de resultados y puntuaciones*/
+.resultado-container 
+{
+    background: #f9f9f9;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 30px auto;
+    display: none; /* Ocultar los resultados al principio */
+}
+
+/*Estilo para el mensaje final y puntaje*/
+.score, .message 
+{
+    text-align: left;
+    font-size: 100rem;
+}
+
+/*Botón para reiniciar el test
+.ReinciarTest {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    font-size: 1.1rem;
+}*/
+
