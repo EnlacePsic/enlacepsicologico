@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
             Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
         },
+        //Tarjeta para el catalogo
         {
             Titulo: 'Inventario de depresión <br> "BDI-II"',
             Imagen: 'images/depresion.svg',
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Aplicar <br> "BDI-II"',
             Imagen: '../images/aplicar.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/CARAS-R/aplicacion-bdi-ii.html'
+            Pagina: '../Pruebas/DepresionBDI-II/aplicacion-bdi-ii.html'
         },
         {
             Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
