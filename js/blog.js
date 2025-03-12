@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const entradas = [
         // Entrada de blog sobre CARAS-R
         {
-            Titulo: 'Test CARAS-R',
+            Titulo: 'Sobre el Test CARAS-R',
             Imagen: 'images/tdah.svg',
-            Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
+            Descripcion: 'Exploramos las areas de aplicacion y su eficiencia en la identificacion del TDAH y TDA',
             Pagina: 'Articulos/articulo-caras.html'
         },
         // Entrada para la aplicación (Debe excluirse del blog)
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
             Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
         },
         {
-            Titulo: 'Inventario de depresión <br> "BDI-II"',
+            Titulo: 'Una herramienta clasica para evaluar la depresión',
             Imagen: 'images/depresion.svg',
-            Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '/Cuestionario-de-depresion'
+            Descripcion: 'Uno de los inventarios mas utilizados en la identifiación de la depresión.',
+            Pagina: 'Articulos/articulo-bdi.html'
         },
         {
-            Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
+            Titulo: 'Inventario de ansiedad, <br> "BAI"',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
             Pagina: '/Cuestionario-de-ansiedad'
