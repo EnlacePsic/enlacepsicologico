@@ -13,21 +13,21 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Aplicar CARAS-R',
             Imagen: '../images/aplicar.svg',
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: 'Pruebas/CARAS-R/aplicacion-caras.html'
+            Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
         },
         //Tarjeta para el catalogo
         {
             Titulo: 'Inventario de depresión <br> "BDI-II"',
             Imagen: 'images/depresion.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/CARAS-R/aplicacion-bdi-ii.html'
+            Pagina: '../Pruebas/CARAS-R/articulo-bdi.html'
         },
         //Tarjeta para la aplicación
         {
             Titulo: 'Aplicar <br> "BDI-II"',
             Imagen: '../images/aplicar.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/DepresionBDI-II/aplicacion-bdi-ii.html'
+            Pagina: '../Pruebas/DepresionBDI/aplicacion-bdi.html'
         },
         {
             Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
@@ -89,14 +89,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Cargar solo el catálogo de CARAS (si existe)
     const carasSection = document.getElementById('caras');
     if (carasSection) {
-        crearCatalogo('caras', [pruebas[0]]);
+        crearCatalogo('caras', [pruebas[1]]);
     }
 
-    // Cargar solo el catálogo de Estrés (si existe)
-    const estresSection = document.getElementById('depresion');
-    if (estresSection) {
-        crearCatalogo('depresion', [pruebas[0]]);
-    } else {
-        console.log("El elemento con id 'depresion' no está presente en el DOM.");
-    }
+    // Cargar solo el catálogo de depresion (si existe)
+    const depresionSection = document.getElementById('depresion');
+    if (depresionSection) {
+        crearCatalogo('depresion', [pruebas[3]]);
+    } 
 });

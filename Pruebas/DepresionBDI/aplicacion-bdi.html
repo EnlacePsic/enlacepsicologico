@@ -81,116 +81,10 @@
         <!-- end header section -->
       </div>
 
-    <h3 class="tituloPrincipal" align="center">Test de percepción de diferencias</h3>
-    <h5 class="subTituloPrincipal" align="center">Evaluación para TDA y TDAH</h5>
+    <h3 class="tituloPrincipal" align="center">Inventario de depresión de Beck II</h3>
+    <h5 class="subTituloPrincipal" align="center">Evaluación para el grado de depresión</h5>
 
-    <!-- Instrucciones para la prueba -->
-    <div id="instrucciones" class="instructions-container">
-        <h4><strong>Instrucciones</strong></h4>
-        <p>
-            <strong>Tiempo:</strong> Tienes 3 minutos para completar la prueba<br />
-            <br /><strong>1.- Observa bien: </strong> En cada grupo de caras, una es diferente a las demás.
-            <br /><strong>2.- Busca la diferencia: </strong> Puede estar en la boca, cabello, cejas o los ojos.
-            <br /><strong>3.- Selecciona la cara diferente </strong> tocándola (en celular) o haciendo clic (en computadora)
-            <br /><strong>4.- Tu elección se marcará con un cuadro rojo. </strong>
-            <br />Es importante responder con precisión y rapidez, ya que esto ayuda a evaluar tu concentración y habilidades de observación.
-        </p>
-
-        <div class="example-container">
-            <p><strong>Ejemplo:</strong></p>
-            <img id="imagenEjemplo" src="img/Ejemplo.png" alt="Ejemplo del test" />
-        </div>
-
-        <div class="proceder-formulario-container">
-            <br /><button onclick="mostrarFormulario()">Proceder con el test</button>
-        </div>
-    </div>
-
-    <!-- Formulario para elegir datos -->
-    <div id="formulario" class="form-container" style="display: none;">
-        <p>Test de percepción de diferencias</p>
-
-        <label for="nivelUsuario">Nivel:</label>
-        <select id="nivelUsuario" onchange="actualizarOpcionesGrado()">
-            <option value="">Selecciona un nivel</option>
-            <option value="1">Primaria</option>
-            <option value="2">Secundaria</option>
-            <option value="3">Preparatoria</option>
-        </select>
-        
-        <label for="gradoUsuario">Grado:</label>
-        <select id="gradoUsuario">
-            <option value="">Selecciona un grado</option>
-        </select>
-        
-        <label for="edadUsuario">&nbsp;Edad:</label>
-        <select id="edadUsuario">
-            <option value="">Selecciona una edad</option>
-            <!-- Aquí va el rango de edad 6 a 18 -->
-            <script>
-                for (let i = 6; i <= 18; i++) {
-                    let option = document.createElement("option");
-                    option.value = i;
-                    option.textContent = i;
-                    document.getElementById("edadUsuario").appendChild(option);
-                }
-            </script>
-        </select>
-
-        <div class="proceder-formulario-container">
-            <br /><br /><button onclick="confirmarDatos()">Confirmar</button>
-        </div>
-
-        <p><br />Al confirmar iniciará la prueba</p>
-    </div>
-
-    <!-- Prueba iniciada -->
-    <div id="test" style="display: none;">
-        <div class="test-container">
-          <div class="image-wrapper" style="position: relative;">
-            <img id="imagenTest" src="" alt="Imagen del test" onclick="DetectarSector(event)" style="width: 100%; cursor: pointer;">
-            <div id="marcador" class="marcador" style="position: absolute;"></div>
-          </div>
-        </div>
-        <p id="mensaje"></p>
-      </div>
-
-    <!-- Resultados -->
-    <div id="resultados" class="results-container" style="display: none;">
-        <p><strong> Resultados</strong></p>
-        <p><strong>Datos del evaluado(a)</strong></p>
-        <p id="nivel">Nivel: </p>
-        <p id="grado">Grado: </p>
-        <p id="edad">Edad: </p>
-
-        <br />
-        <p><strong>Puntuación</strong></p>
-        <p id="aciertos">Aciertos: </p>
-        <p id="aciertosNetos">Aciertos netos: </p>
-        <p id="errores">Errores: </p>
-        <p id="puntaje">Puntaje: </p>
-
-        <br />
-        <p><strong>Interpretación</strong></p>
-        <p id="eneatipoA">Nivel de aciertos (A): </p>
-        <p id="eneatipoE">Nivel de errores (E): </p>
-        <p id="eneatipoAE">Nivel de eficacia (A-E): </p>
-        <p id="eneatipoICI">Nivel de impulsividad (ICI): </p>
-
-        <br />
-        <p><strong>Diagnóstico</strong></p>
-        <p id="clasificacionCaraE_ICI">Estilo de respuesta (A-E vs. ICI): </p>
-        <p id="clasificacionICI_Aciertos">Contingencia de rendimiento (ICI vs. A): </p>
-
-        <br />
-        <p><strong>Tiempo restante</strong></p>
-        <div id="tiempoRestanteDisplay">Tiempo restante</div>
-
-        <div class="proceder-formulario-container">
-            <br /><button onclick="regresarAlInicio()">Repetir test</button>
-        </div>
-    </div>
-
+   
           <!-- info section -->
           <section class="info_section layout_padding">
             <div class="container">
@@ -331,6 +225,8 @@
         
     <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+    
 
 </body>
 </html>
