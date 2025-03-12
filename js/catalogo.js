@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Inventario de depresión <br> "BDI-II"',
             Imagen: 'images/depresion.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/CARAS-R/articulo-bdi.html'
+            Pagina: 'Articulos/articulo-bdi.html'
         },
         //Tarjeta para la aplicación
         {
-            Titulo: 'Aplicar <br> "BDI-II"',
+            Titulo: 'Aplicar BDI-II',
             Imagen: '../images/aplicar.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
             Pagina: '../Pruebas/DepresionBDI/aplicacion-bdi.html'
@@ -92,9 +92,11 @@ document.addEventListener("DOMContentLoaded", function() {
         crearCatalogo('caras', [pruebas[1]]);
     }
 
-    // Cargar solo el catálogo de depresion (si existe)
-    const depresionSection = document.getElementById('depresion');
-    if (depresionSection) {
+    const DepresionBDISection = document.getElementById('depresion');
+    console.log('Sección depresión:', DepresionBDISection);
+    if (DepresionBDISection) {
         crearCatalogo('depresion', [pruebas[3]]);
-    } 
+    }
+
 });
+
