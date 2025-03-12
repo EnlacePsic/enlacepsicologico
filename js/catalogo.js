@@ -33,19 +33,13 @@ document.addEventListener("DOMContentLoaded", function() {
             Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
-            Pagina: '/Cuestionario-de-ansiedad'
+            Pagina: 'Articulos/articulo-bai.html'
         },
-        {
-            Titulo: 'Cuestionario de estrés',
-            Imagen: 'images/estres.svg',
-            Descripcion: 'Evalúa la intensidad del estrés (13 años o más).',
-            Pagina: '/Cuestionario-de-estres'
-        }
     ];
 
     const excluir = [
         'Aplicar CARAS-R',
-        'Cuestionario de estrés',
+        'Aplicar BDI-II',
         // Puedes agregar más títulos aquí
     ];
 
