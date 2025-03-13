@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         //Tarjeta para el catalogo
         {
-            Titulo: 'Cuestionario de ansiedad, <br> "BAI"',
+            Titulo: 'Inventario de ansiedad',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
-            Pagina: 'Articulos/articulo-bai.html'
+            Pagina: 'Articulos/ansiedad.html'
         },
-        //Tarjeta para la aplicacion
-        {
-            Titulo: 'Aplicar BAI',
-            Imagen: '../images/aplicar.svg',
-            Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/AnsiedadBAI/aplicacion-bai.html'
-        },
+        // //Tarjeta para la aplicacion
+        // {
+        //     Titulo: 'Aplicar test de ansiedad',
+        //     Imagen: '../images/aplicar.svg',
+        //     Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
+        //     Pagina: '../Pruebas/AnsiedadBAI/test ansiedad de beck.html'
+        // },
     ];
 
     const excluir = [

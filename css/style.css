@@ -38,14 +38,14 @@ body {
           justify-content: center;
 }
 
-.custom_heading-container h3 {
+.custom_heading-container h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
   position: relative;
 }
 
-.custom_heading-container h3::before {
+.custom_heading-container h1::before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -453,6 +453,23 @@ a:focus {
 /*Fin seeccion catalogo*/
 
 /* Inicia estilo tarjetas blog*/
+.enlace-centrado {
+  text-align: center;
+}
+
+.enlace-centrado a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.enlace-centrado a:hover {
+  background-color: #45a049;
+}
+
 .blog {
   display: flex;
   flex-wrap: wrap;
@@ -498,7 +515,7 @@ a:focus {
   text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.entrada h3 {
+.entrada h1 {
   font-size: 18px;
   margin: 0 0 5px 0;
 }
