@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const entradas = [
         // Entrada de blog sobre CARAS-R
         {
-            Titulo: 'Sobre el Test CARAS-R',
+            Titulo: 'Percepción de diferencias para la evaluacion del TDAH y TDA',
             Imagen: 'images/tdah.svg',
-            Descripcion: 'Exploramos las areas de aplicacion y su eficiencia en la identificacion del TDAH y TDA',
+            Descripcion: 'Las aplicacion de pruebas de percepción en la evaluacin del TDAH y TDA',
             Pagina: 'Articulos/articulo-caras.html'
         },
         // Entrada para la aplicación (Debe excluirse del blog)
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
             Pagina: 'Articulos/articulo-bdi.html'
         },
         {
-            Titulo: 'Inventario de ansiedad, <br> "BAI"',
+            Titulo: 'Un inventario sencillo para la ansiedad',
             Imagen: 'images/ansiedad.svg',
-            Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
+            Descripcion: '21 preguntas para identificar rapidamente el grado de ansiedad',
             Pagina: 'Articulos/ansiedad.html'
         },
         {
