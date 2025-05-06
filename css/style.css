@@ -43,6 +43,7 @@ body {
   font-weight: bold;
   color: #000000;
   position: relative;
+  margin-bottom: 30px; 
 }
 
 .custom_heading-container h1::before {
@@ -452,91 +453,149 @@ a:focus {
 
 /*Fin seeccion catalogo*/
 
-/* Inicia estilo tarjetas blog*/
-.enlace-centrado {
-  text-align: center;
-}
-
-.enlace-centrado a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.enlace-centrado a:hover {
-  background-color: #45a049;
-}
-
-.blog {
-  display: flex;
-  flex-wrap: wrap;
+/* Inicio seccion equipo */
+/* Contenedor general de la sección */
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-  align-items: center; /* Centra las tarjetas */
-  flex-direction: column; /* Apila las tarjetas al centro */
-  padding: 50px 20px;
-  max-width: 1100px;
+  padding: 0 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* Tarjeta del miembro */
+.miembro {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: #fff;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.miembro img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Capa rosada sobre la imagen */
+.overlay {
+  position: relative;
+  z-index: 2;
+  padding: 20px 10px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: auto;
+  height: auto;
+}
+
+/* Texto en la tarjeta */
+.overlay h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.overlay p {
+  margin: 5px 0 0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Fin seccion equipo */
+
+/* Inicia estilo tarjetas blog*/
+/* --- Estilo general del contenedor de entradas --- */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
   margin: auto;
 }
 
+/* --- Tarjeta individual --- */
 .entrada {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  width: 100%;
-  max-width: 700px; /* Ajusta el tamaño máximo */
-  border: none !important; /* Elimina cualquier borde */
-  border-radius: 10px;
-  padding: 20px;
   background-color: #ffffff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.1s ease-out, background-color 0.2s ease;
-  gap: 15px; /* Espacio entre la imagen y el texto */
-  margin: auto; /* Centra las tarjetas */
-  margin-bottom: 5px; /* Espacio entre cada tarjeta */
-}
-
-/* Imagen a la izquierda */
-.entrada img {
-  width: 150px; /* Tamaño fijo */
-  height: 100px; /* Tamaño fijo */
-  object-fit: cover; /* Mantiene proporción sin deformar */
-  border-radius: 5px;
-}
-
-/* Contenedor del texto */
-.entrada-contenido {
-  flex-grow: 1; /* Ocupa el espacio restante */
-  text-align: left; /* Alinea el texto a la izquierda */
-}
-
-.entrada h1 {
-  font-size: 18px;
-  margin: 0 0 5px 0;
-}
-
-.entrada p {
-  font-size: 14px;
-  color: #555;
-  margin: 0;
-  text-overflow: ellipsis;
+  border-radius: 16px;
   overflow: hidden;
-  max-width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-/* Efectos */
 .entrada:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
-.entrada:active {
-  background-color: #f0f0f0;
-  transform: scale(0.98);
+/* --- Imagen destacada --- */
+.entrada img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* 👈 CAMBIO aquí */
+  padding: 10px;        /* 👈 Opcional, agrega espacio alrededor */
+  
+}
+
+
+/* --- Contenido textual dentro de la tarjeta --- */
+.entrada-contenido {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* --- Título del artículo --- */
+.entrada h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+/* --- Descripción/resumen --- */
+.entrada p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* --- Botón "Leer más" --- */
+.entrada a.boton-leer {
+  margin-top: 10px;
+  align-self: center;
+  padding: 10px 16px;
+  background: linear-gradient(to right, #ff5e7d, #ff758c);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.entrada a.boton-leer:hover {
+  background: linear-gradient(to right, #ff3f61, #ff5e7d);
 }
 
 /* Fin estilo tarjetas blog*/
