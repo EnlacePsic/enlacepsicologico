@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
             Pagina: 'Articulos/ansiedad.html'
         },
         {
-            Titulo: 'Cuestionario de estrés',
+            Titulo: 'Cuestionario de adhd',
             Imagen: '../images/estres.svg',
             Descripcion: 'Evalúa la intensidad del estrés (13 años o más).',
-            Pagina: '/Cuestionario-de-estres'
+            Pagina: 'Articulos/articulo-adhd-rs.html'
         }
     ];
 

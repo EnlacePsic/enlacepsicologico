@@ -8,26 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
             Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
             Pagina: 'Articulos/articulo-caras.html'
         },
-        //Tarjeta para la aplicación
-        {
-            Titulo: 'Aplicar CARAS-R',
-            Imagen: '../images/aplicar.svg',
-            Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
-        },
         //Tarjeta para el catalogo
         {
             Titulo: 'Inventario de depresión <br> "BDI-II"',
             Imagen: 'images/depresion.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
             Pagina: 'Articulos/articulo-bdi.html'
-        },
-        //Tarjeta para la aplicación
-        {
-            Titulo: 'Aplicar BDI-II',
-            Imagen: '../images/aplicar.svg',
-            Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-            Pagina: '../Pruebas/DepresionBDI/aplicacion-bdi.html'
         },
         //Tarjeta para el catalogo
         {
@@ -36,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
             Pagina: 'Articulos/ansiedad.html'
         },
-        // //Tarjeta para la aplicacion
-        // {
-        //     Titulo: 'Aplicar test de ansiedad',
-        //     Imagen: '../images/aplicar.svg',
-        //     Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
-        //     Pagina: '../Pruebas/AnsiedadBAI/test ansiedad de beck.html'
-        // },
+        //Tarjeta para el catalogo
+        {
+            Titulo: 'ADHD-RS',
+            Imagen: 'images/ansiedad.svg',
+            Descripcion: 'Evalúa la presencia de sintomas relacionados  TDAH (13 años o más).',
+            Pagina: 'Articulos/adhd-rs.html'
+        },
     ];
 
     const excluir = [
