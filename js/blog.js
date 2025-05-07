@@ -8,12 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
             Pagina: 'Articulos/articulo-caras.html'
         },
         {
-            Titulo: 'Aplicar CARAS-R',
-            Imagen: '../images/aplicar.svg',
-            Descripcion: 'Mide la atención sostenida y la atención selectiva (6 a 18 años).',
-            Pagina: '../Pruebas/CARAS-R/aplicacion-caras.html'
-        },
-        {
             Titulo: 'Una herramienta clásica para evaluar la depresión',
             Imagen: '../images/depresion.svg',
             Descripcion: 'Uno de los inventarios más utilizados en la identificación de la depresión.',
@@ -27,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             Titulo: 'Cuestionario de adhd',
-            Imagen: '../images/estres.svg',
+            Imagen: '../images/client.png',
             Descripcion: 'Evalúa la intensidad del estrés (13 años o más).',
-            Pagina: 'Articulos/articulo-adhd-rs.html'
+            Pagina: 'Articulos/adhd-rs.html'
         }
     ];
 

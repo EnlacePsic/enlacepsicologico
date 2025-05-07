@@ -380,6 +380,8 @@ function iniciarTemporizador() {
       puntaje = 0;
     }
     calcularEneatipos();
+
+    
   }
 
     
@@ -1519,6 +1521,7 @@ const baremosEdad16a18ICI = [
     // Mostrar el tiempo restante en los resultados
     document.getElementById("tiempoRestanteDisplay").textContent = `Tiempo restante: ${tiempoRestante}`;
     document.getElementById("test").style.display = "none";
+    
 }
 
   

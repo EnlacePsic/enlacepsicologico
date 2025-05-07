@@ -94,8 +94,6 @@ function calcularResultado() {
   mensaje += `Síntomas de inatención: nivel ${inatencionNivel} (puntaje: ${puntajeInatencion}/27).\n`;
   mensaje += `Síntomas de hiperactividad/impulsividad: nivel ${hiperactividadNivel} (puntaje: ${puntajeHiperactividad}/27).\n\n`;
 
-  mensaje += "Este cuestionario es solo una herramienta de tamizaje. Si presenta niveles moderados o altos, se recomienda acudir con un profesional de la salud mental para una evaluación clínica completa.";
-
   document.getElementById("mensajeResultado").innerText = mensaje;
   document.getElementById("testContainer").style.display = "none";
   document.getElementById("resultadoContainer").style.display = "block";
