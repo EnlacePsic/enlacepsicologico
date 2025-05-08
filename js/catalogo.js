@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Lista de pruebas
     const pruebas = [
+        
         //Tarjeta para el catalogo
         {
             Titulo: 'Test CARAS-R',
@@ -10,25 +11,26 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         //Tarjeta para el catalogo
         {
-            Titulo: 'Inventario de depresión <br> "BDI-II"',
+        Titulo: 'Cuestionario ASRS v1.1',
+        Imagen: 'images/asrs.svg',
+        Descripcion: 'Evalúa la presencia de sintomas relacionados  TDAH en adultos.',
+        Pagina: 'Articulos/articulo-asrs.html'
+        },
+        //Tarjeta para el catalogo
+        {
+            Titulo: 'Inventario de depresión <br> BDI-II',
             Imagen: 'images/depresion.svg',
             Descripcion: 'Evalúa síntomas depresivos mediante autoinforme (13 años o más).',
             Pagina: 'Articulos/articulo-bdi.html'
         },
         //Tarjeta para el catalogo
         {
-            Titulo: 'Inventario de ansiedad',
+            Titulo: 'Inventario de ansiedad BAI',
             Imagen: 'images/ansiedad.svg',
             Descripcion: 'Evalúa la gravedad de la sintomatología ansiosa (13 años o más).',
             Pagina: 'Articulos/ansiedad.html'
         },
-        //Tarjeta para el catalogo
-        {
-            Titulo: 'ADHD-RS',
-            Imagen: 'images/ansiedad.svg',
-            Descripcion: 'Evalúa la presencia de sintomas relacionados  TDAH (13 años o más).',
-            Pagina: 'Articulos/adhd-rs.html'
-        },
+
     ];
 
     const excluir = [

@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
             Pagina: 'Articulos/ansiedad.html'
         },
         {
-            Titulo: 'Cuestionario de adhd',
-            Imagen: '../images/client.png',
+            Titulo: 'Escala de hiperactividad e impulsividad "ADHD"',
+            Imagen: '../images/asrs.svg',
             Descripcion: 'Evalúa la intensidad del estrés (13 años o más).',
-            Pagina: 'Articulos/adhd-rs.html'
+            Pagina: 'Articulos/articulo-asrs.html'
         }
     ];
 
