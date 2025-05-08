@@ -781,7 +781,7 @@ body {
 .mostrar-formulario-container button,
 .proceder-formulario-container button {
   display: block;
-  margin: 20px auto;
+  margin: -10px auto;
   background-color: rgb(57, 100, 151);
   color: white;
   border: none;
@@ -803,6 +803,32 @@ body {
   background-color: rgb(20, 55, 90);
   transform: scale(0.98);
 }
+
+.mostrar-formulario-container-contactar a button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #1d976c, #29ca64); /* Puedes cambiar los colores aquí */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mostrar-formulario-container-contactar a button:hover {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  transform: scale(1.02);
+}
+
 
 /* Contenedores reutilizables */
 .instructions-container,
@@ -831,6 +857,7 @@ body {
 }
 
 .textconfirmacion{
+  margin: 40px;
   text-align: center;
 }
 
